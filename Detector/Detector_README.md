@@ -1,7 +1,5 @@
 This detector was taken from: https://github.com/theAIGuysCode/tensorflow-yolov4-tflite/tree/master and slightly modified.
 
-Use command "git lfs pull" when working with files in this folder in order to view and edit files directly (instead of raw)
-
 The weights for this model are found at: https://drive.google.com/drive/folders/1MqEfknZQ5Q0qX5GkdeTdtCzTq3zVf1i6?usp=sharing
 To run locally move variables.data-00000-of-00001 into Detector/checkpoints/custom-416/variables/
 
