@@ -1,1 +1,3 @@
-State-Identifier/** filter=lfs diff=lfs merge=lfs
+# These lines were used previously but are currently not needed
+# Detector/** filter=lfs diff=lfs merge=lfs
+# State-Identifier/** filter=lfs diff=lfs merge=lfs
