@@ -2403,7 +2403,11 @@ input, select, textarea {
 .image-preview__image{
 	display: none;
 	width: 100%;
-}		
+}
+.video-preview__video{
+	display: none;
+	width: 100%;
+}			
 
 /* List */
 
