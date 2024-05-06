@@ -1,5 +1,1 @@
-Predictions for: 4bccf3b241f414.jpg ['Massachusetts', 'SouthCarolina', 'Tennessee', 'Illinois', 'Idaho']
-Predictions for: 5d3d2f68598d5f.jpg ['Massachusetts', 'California', 'WashingtonDC', 'Michigan', 'SouthDakota']
-Predictions for: 6e1992cfb40bcc.jpg ['Massachusetts', 'Tennessee', 'NewHampshire', 'WestVirginia', 'Wisconsin']
-Predictions for: 7c8e5617b22245.jpg ['Massachusetts', 'Tennessee', 'NewMexico', 'Alaska', 'Arkansas']
-Predictions for: 7dacd0f4f59906.jpg ['Massachusetts', 'Wisconsin', 'Alabama', 'California', 'NewMexico']
+Predictions for: 4bccf3b241f414.jpg ['Massachusetts', 'SouthCarolina', 'Tennessee', 'Illinois', 'Idaho', 'NewHampshire']

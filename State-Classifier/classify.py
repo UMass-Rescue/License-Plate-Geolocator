@@ -1,7 +1,7 @@
 from absl import app, flags
 from absl.flags import FLAGS
-from fastai.callbacks import *
-from fastai.vision import *
+# from fastai.callbacks import *
+from fastai.vision import load_learner, open_image
 from pathlib import Path
 from torch import topk
 import os
