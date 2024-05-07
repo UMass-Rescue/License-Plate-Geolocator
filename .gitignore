@@ -1,1 +1,4 @@
 /Detector/checkpoints/
+/Detector/data
+/Detector/detections/
+/Detector/models
