@@ -4,14 +4,9 @@ The first model detects licence plates and isolates them from images/videos
 The second model takes the isolated images from the first model and predicts the top X most probable states that a plate is from.
 
 
-## Insturctions to Run to file
- Setup 
- 1) Python3 
- 2) conda 
- 3) 
+Setup Instructions
 
- Run the following command 
-
- ``
- git clone <repo>
- ``
+Clone the repository.
+Run pip3 install -r requirements.txt. This installs all the necessary libraries.
+Run python3 app.py
+Open http://127.0.0.1:5000/ on any browser to view the UI.
