@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}" />
+		<noscript>
+            <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css')}}" />
+        </noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<section id="header">
+			<div class="inner">
+				<span class="icon solid major fa-car"></span>
+				<h1><strong>Geolocator</strong><br />
+				an Immich project</h1>
+				<!-- <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
+				lobortis feugiat sapien sed etiam volutpat accumsan.</p> -->
+				<ul class="actions special">
+					<li><a href="#one" class="button scrolly">Results</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+
+		{% for prediction in predictions %}
+		<section id="two" class="main style1">
+			<div class="container">
+				<div class="row gtr-150">
+					<div class="col-6 col-12-medium">
+						<h4>Ranked output Table for {{ prediction.file_name }}</h4>
+						<h5>Image name here</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Abbr</th>
+										<th>State</th>
+										<th>Rank</th>
+									</tr>
+								</thead>
+								<tbody>
+									{% for index in range(prediction.predictions|length) %}
+                                    <tr>
+                                        <td>{{ prediction.predictions[index] }}</td>
+                                        <td>XY</td>
+                                        <td>{{ index }}</td>
+                                    </tr>
+                                    {% endfor %}
+									
+									<!-- <tr>
+										<td>State name</td>
+										<td>XY</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>State name</td>
+										<td>XY</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>State name</td>
+										<td>XY</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>State name</td>
+										<td>XY</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>State name</td>
+										<td>XY</td>
+										<td>5</td>
+									</tr> -->
+								</tbody>
+								<tfoot>
+									<tr>
+										<!-- <td colspan="2"></td> -->
+										<td>Footnotes if needed</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="col-6 col-12-medium imp-medium " style="display: flex; justify-content: center; align-items: center;">
+						<span class="image fit" style="float:center">
+							<div class="image-preview" id="imagePreview">
+								<img class="image-preview__image" src="/static/images1/{{ prediction.file_name }}" alt="{{ prediction.file_name }}" />
+							</div>
+						</span>
+					</div>
+				</div>
+					
+			</div>
+		</section>
+        {% endfor %}
+
+
+		<!-- Footer -->
+			<section id="footer">
+                <ul class="icons">
+                    <li><a href="#"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#"><i class="fa fa-upload"></i></a></li>
+                    <li><a href="#"><i class="fa fa-history"></i></a></li>
+                    <li><a href="#"><i class="fa fa-code"></i></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; CICS</li><li>596E: Machine Learning Applied to child rescue</li>
+                </ul>
+            </section>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+
+	</body>
+</html>
