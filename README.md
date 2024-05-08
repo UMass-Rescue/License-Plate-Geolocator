@@ -10,5 +10,4 @@ Our goal is to build a geolocator that can recognize license plates in images/vi
 Clone the repository.
 1) Run pip3 install -r requirements.txt. This installs all the necessary libraries.
 2) Run python3 app.py
-
-* Open http://127.0.0.1:5000/ on any browser to view the UI.
+3) Open http://127.0.0.1:5000/ on any browser to view the UI.
