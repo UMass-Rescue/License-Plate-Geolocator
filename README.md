@@ -1,7 +1,7 @@
 # License-Plate-Geolocator
-Our goal is to build a geolocator that can recognize license plates in images/videos in order to aid law enforcement in locating persons of interest.
-The first model detects licence plates and isolates them from images/videos (adapted from https://github.com/theAIGuysCode/tensorflow-yolov4-tflite/tree/master)
-The second model takes the isolated images from the first model and predicts the top X most probable states that a plate is from (using ResNet: https://github.com/tornadomeet/ResNet/tree/master)
+Our goal is to build a geolocator that can recognize license plates in images/videos in order to aid law enforcement in locating persons of interest. This is done using two separate machine learning models sequentially:
+* The first model detects licence plates and isolates them from images/videos (adapted from https://github.com/theAIGuysCode/tensorflow-yolov4-tflite/tree/master)
+* The second model takes the isolated images from the first model and predicts the top X most probable states that a plate is from (using ResNet: https://github.com/tornadomeet/ResNet/tree/master)
 
 
 Setup Instructions
