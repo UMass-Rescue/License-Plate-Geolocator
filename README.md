@@ -4,10 +4,7 @@ Our goal is to build a geolocator that can recognize license plates in images/vi
 * The second model takes the isolated images from the first model and predicts the top 5 most probable states that a plate is from (using ResNet: https://github.com/tornadomeet/ResNet/tree/master)
 
 **Scripts for training and setting up each of the models can be found in the branch labeled "ml"**
-## Technical Approch 
-1) Extract all the images from video
-2) Find all contours in the image frame
-3) Pass every image to the classification model to identify the top 5 states
+
 
 
 ## Setup Instructions
