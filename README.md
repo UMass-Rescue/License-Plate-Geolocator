@@ -5,9 +5,9 @@ Our goal is to build a geolocator that can recognize license plates in images/vi
 
 **Scripts for training and setting up each of the models can be found in the branch labeled "ml"**
 ## Technical Approch 
-1) Extract all the images from Video
+1) Extract all the images from video
 2) Find all contours in the image frame
-3) Pass every image to the Classification model to identify the top 5 states
+3) Pass every image to the classification model to identify the top 5 states
 
 
 ## Setup Instructions
@@ -20,10 +20,10 @@ Our goal is to build a geolocator that can recognize license plates in images/vi
 Google Drive link :  https://drive.google.com/drive/folders/1XJRzu6WLNre8euyKdlRqHElFOu0mZO_t?usp=sharing
 ## Implementation (Completed, On-going, Future Plans)
 ### Completed: 
-1) The Detector model is fully implemented according to our specific needs and incorporated with the most recent State Classifier Model
+1) The Detector model is fully implemented according to our specific needs and incorporated with the most recent State Classifier model
 2) The State Classifier model works with high accuracy on current test data
 3) Frontend is fully implemented. Upload, results pages works as intented
-4) Backend operations include server-side tasks, data processing, and interfacing with ML model
+4) Backend operations include server-side tasks, data processing, and interfacing with ML models
 5) Frontend provides the user interface for interacting with the application
 
 ### Future Works
